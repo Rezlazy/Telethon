@@ -89,6 +89,7 @@ def main():
         fetch_errors(ERRORS_JSON)
 
     else:
+        gen_tl()
         # Get the long description from the README file
         with open('README.rst', encoding='utf-8') as f:
             long_description = f.read()

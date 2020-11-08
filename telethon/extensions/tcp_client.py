@@ -36,10 +36,10 @@ class TcpClient:
         """Connects to the specified IP and port number.
            'timeout' must be given in seconds
         """
-        if ':' in ip:  # IPv6
-            mode, address = socket.AF_INET6, (ip, port, 0, 0)
-        else:
-            mode, address = socket.AF_INET, (ip, port)
+        # if ':' in ip:  # IPv6
+        #     mode, address = socket.AF_INET6, (ip, port, 0, 0)
+        # else:
+        mode, address = socket.AF_INET, (ip, port)
 
         while True:
             try:
