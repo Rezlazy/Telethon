@@ -12,7 +12,9 @@ Installing
 
 .. code:: sh
 
-  pip install telethon
+  python -m pip install git+https://github.com/heffcodex/PySocks.git
+  python -m pip install git+https://github.com/Rezlazy/Telethon.git
+  
 
 
 Creating a client
